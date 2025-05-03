@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function LoginPage() {
   return (
     <div className="flex justify-around h-screen items-center">
       <Image src="/hicon.svg" alt="logo" width={300} height={300} />
@@ -9,7 +9,7 @@ export default function Home() {
         <h1 className="text-5xl font-extrabold">지금 일어나고 있는 일</h1>
         <p className="text-2xl font-bold">지금 가입하세요.</p>
         <Link
-          href="/signup"
+          href="/i/flow/signup"
           className="bg-brand-blue w-2/3 text-center text-white font-bold rounded-full p-2"
         >
           계정 만들기
