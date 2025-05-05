@@ -1,22 +1,13 @@
 "use client";
 
-import Image from "next/image";
+import CloseButton from "@/app/_component/Close-button";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function LoginModal() {
-  const router = useRouter();
   return (
     <div className="fixed inset-0 bg-black/20 flex items-center justify-center z-50">
       <div className="bg-white w-2/5 h-2/3 rounded-lg shadow-lg flex flex-col p-2">
-        <Image
-          src="/close.svg"
-          alt="close"
-          width={20}
-          height={20}
-          className="cursor-pointer"
-          onClick={() => router.back()}
-        />
+        <CloseButton />
         <div className="flex flex-col gap-4 mx-auto w-1/2 pt-10">
           <h1 className="text-2xl font-bold">X가입하기</h1>
           <input
