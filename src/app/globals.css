@@ -9,3 +9,15 @@
   --color-brand-grey: #cfd9de;
   --color-brand-blue: #1d9bf0;
 }
+
+.common-padding {
+  @apply px-4; /* 10px = 2.5rem in Tailwind */
+}
+
+.input-style {
+  @apply rounded-sm border border-brand-grey p-2 py-4 w-full;
+}
+
+.button-style {
+  @apply bg-black text-white py-4 p-2 rounded-full w-full;
+}
